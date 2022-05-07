@@ -1,7 +1,7 @@
 <html>
 <head>
 <style>
-    h1 {
+    .center{
         position: absolute;
         margin: 0;
         top: 50%;
@@ -13,6 +13,17 @@
 </head>
 <title>WIP</title>
 <body bgcolor="#000000">
-<h1 style="color:white">bazırt</h1>
+<h1 id="headr" onclick="timer()" style="color:white" class="center">bazırt</h1>
+<font size="31"><h2 id="count" style="color:white" class="center"></h2></font>
+<script>
+    function timer() {
+        var totalTime = 600
+        document.getElementById("headr").setAttribute("hidden",true)
+        document.getElementById("count").removeAttribute("hidden")
+        document.getElementById("count").innerHTML = totalTime
+        var x = setInterval(function(){document.getElementById("count").innerHTML = totalTime-1; totalTime = totalTime-1; if(totalTime === 0){clearInterval(x); document.getElementById("count").setAttribute("hidden",true); document.getElementById("headr").removeAttribute("hidden")}}, 1000)
+
+    }
+</script>
 </body>
 </html>
