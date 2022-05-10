@@ -1,0 +1,10 @@
+img{
+    position: absolute;
+    margin: auto;
+    width: 392px;
+    height: 400px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+};
