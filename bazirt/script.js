@@ -5,7 +5,7 @@ function timer() {
     document.getElementById("count").innerHTML = totalTime
     var x = setInterval(function(){
         if(totalTime === 32){
-            document.getElementById("count").innerHTML = totalTime-1 + "😂";
+            document.getElementById("count").innerHTML = "😂" + totalTime-1 + "😂";
             totalTime = totalTime-1
         }
         else{

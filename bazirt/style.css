@@ -1,6 +1,12 @@
 p {
     color: white;
 }
+p:hover {
+    color: red;
+}
+h1:hover {
+    color: red;
+}
 .center{
     color: white;
     position: absolute;
