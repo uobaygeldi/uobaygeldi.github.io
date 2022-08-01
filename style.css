@@ -7,4 +7,18 @@ img {
     bottom: 0;
     right: 0;
     left: 0;
-};
+}
+.rd:hover {
+    text-align: center;
+    color: red;
+}
+.rd:visited, .rd:link, .rd:active{
+    text-decoration: none;
+    text-align: center;
+    color:white
+}
+.rd:link:hover{
+    text-decoration: none;
+    text-align: center;
+    color:red
+}
