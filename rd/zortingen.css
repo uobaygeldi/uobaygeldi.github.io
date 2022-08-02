@@ -1,25 +1,49 @@
-.container {
-    position: relative;
-}
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+    width: 300px;
+}
+.center2 {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+    max-height: 90%;
 }
 .right {
     display: inline;
     position: absolute;
-    right: 8px
+    top: 2%;
+    right: 1%;
+    width: 10%
+}
+.left {
+    display: inline;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    width: 10%
 }
 .rd {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     box-align: center;
     -webkit-text-stroke: 1.5px;
     -webkit-text-stroke-color: black;
     color: white;
+    position:absolute;
+    top:15%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+.slider {
+    display:inline;
     position: absolute;
-    top: 1%;
-    right: 47.7%
+    left: 12%;
+    width: 76%;
+    height: 20px;
+    background: white;
 }
