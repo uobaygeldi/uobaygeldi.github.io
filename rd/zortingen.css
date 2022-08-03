@@ -40,3 +40,12 @@
     height: 20px;
     background: white;
 }
+.slider2 {
+    display:inline;
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    width: 98%;
+    height: 20px;
+    background: white;
+}

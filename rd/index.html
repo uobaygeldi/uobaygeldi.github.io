@@ -19,6 +19,7 @@
         <img id="rds" src="rd.png" class="rd" hidden>
     </div>
 </div>
+<input type="range" min="10" max="150" value="80" class="slider2" id="myRange2">
 </body>
 <script>
 var loadFile = function(event) {
@@ -36,6 +37,10 @@ var revealImage = function(){
 var slider = document.getElementById("myRange");
 slider.oninput = function() {
     document.getElementById("rdsa").style.top = this.value+"%";
+}
+var slider2 = document.getElementById("myRange2");
+slider2.oninput = function() {
+    document.getElementById("rds").style.width = this.value+"px";
 }
 </script>
 </html>
