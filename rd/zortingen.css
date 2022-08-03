@@ -4,8 +4,9 @@
     left:50%;
     transform: translate(-50%,-50%);
     white-space: nowrap;
-    max-width: 90%;
-    height: 80%;
+    width: 80%;
+    height: 90%;
+    object-fit: contain;
 }
 .right {
     display: inline;
@@ -24,21 +25,12 @@
     width: 10%
 }
 .rd {
-    font-family: Impact;
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 700; 
-    line-height: 26.4px; 
-    font-size: 30px;
-    box-align: center;
-    -webkit-text-stroke: 1.5px;
-    -webkit-text-stroke-color: black;
-    color: white;
     position:absolute;
     top:15%;
     left:50%;
     transform: translate(-50%,-50%);
     white-space: nowrap;
+    width: 80px;
 }
 .slider {
     display:inline;
