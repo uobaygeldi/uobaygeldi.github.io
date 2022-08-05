@@ -11,10 +11,11 @@
 <body bgcolor="black">
 <p> <button onclick="document.getElementById('file').click()" class="left">Yükle</button>
     <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none">
-    <input type="range" min="10" max="50" value="15" class="slider" id="myRange">
+    <input type="range" min="15" max="90" value="20" class="slider" id="myRange">
+    <input type="range" min="15" max="85" value="50" class="slider3" id="myRange3">
     <button class="right"onclick="revealImage()">RDla</button></p>
 <div> 
-    <p><img  id="output" hidden></p>
+    <p><img  id="output" hidden><p id="texte" class="texte"><b>Nasıl Kullanılır?</b><br><br><br>1) Yükleye tıkla<br><br>2) RDla tıkla<br><br>3) En üstteki kaydırgaç RD'ı aşağı yukarı oynatır,<br> onun altındaki sağa sola,<br> ve en alttaki RD'ı büyütür veya küçültür.</p></p>
     <div class="rd" id="rdsa">
         <img id="rds" src="rd.png" class="rd" hidden>
     </div>
@@ -33,6 +34,7 @@ var revealImage = function(){
     document.getElementById("output").hidden = false;
     document.getElementById("output").classList.add("center2");
     document.getElementById("rds").hidden = false
+    document.getElementById("texte").hidden = true
 }
 var slider = document.getElementById("myRange");
 slider.oninput = function() {
@@ -41,6 +43,10 @@ slider.oninput = function() {
 var slider2 = document.getElementById("myRange2");
 slider2.oninput = function() {
     document.getElementById("rds").style.width = this.value+"px";
+}
+var slider = document.getElementById("myRange3");
+slider.oninput = function() {
+    document.getElementById("rdsa").style.left = this.value+"%";
 }
 </script>
 </html>
