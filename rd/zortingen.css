@@ -22,6 +22,12 @@
     width: 10%;
     height: 5%;
 }
+
+.right:hover {
+    background-color: rgb(103, 196, 49);
+    color: #FFF;
+}
+
 .left { 
     background-color: white;
     color: black;
