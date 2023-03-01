@@ -3,7 +3,7 @@ const playButton = document.getElementById('play-button');
 const pdfContainer = document.getElementById('pdf-container');
 
 // Load the PDF.js library
-pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.3.122/pdf.worker.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.js';
 
 playButton.addEventListener('click', async function() {
   const file = fileInput.files[0];
